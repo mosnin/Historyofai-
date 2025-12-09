@@ -8,7 +8,7 @@ export default function Timeline() {
   return (
     <section id="timeline" className="relative py-20 px-4 md:px-8 max-w-7xl mx-auto">
       {/* Timeline center line (desktop only) */}
-      <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 timeline-line -translate-x-1/2" />
+      <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 timeline-line -translate-x-1/2" />
 
       {/* Section header */}
       <motion.div
@@ -18,12 +18,11 @@ export default function Timeline() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-          Journey Through Time
+        <h2 className="kanye-text text-4xl md:text-6xl mb-6">
+          THE TIMELINE
         </h2>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          From theoretical concepts to world-changing applications, explore the
-          pivotal moments that shaped artificial intelligence.
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto uppercase tracking-wide">
+          From theoretical foundations to world-changing applications
         </p>
       </motion.div>
 
@@ -42,11 +41,11 @@ export default function Timeline() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full glass">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 animate-pulse" />
+        <div className="inline-flex items-center justify-center w-12 h-12 border-2 border-foreground">
+          <div className="w-4 h-4 bg-foreground" />
         </div>
-        <p className="mt-4 text-muted-foreground">
-          The journey continues...
+        <p className="mt-6 text-sm uppercase tracking-wider text-muted-foreground">
+          To be continued...
         </p>
       </motion.div>
     </section>
